@@ -1,5 +1,10 @@
 import React from "react";
 
+//1. Extract the search button in its own component
+function SearchButton(props) {
+  return <button className="btn btn-primary">Search</button>;
+}
+
 const Search = () => {
   return (
     <div className="search">
@@ -17,7 +22,7 @@ const Search = () => {
                 className="form-control"
                 placeholder="Customer name"
               />
-              <button className="btn btn-primary">Search</button>
+              <SearchButton />
             </div>
           </form>
         </div>
