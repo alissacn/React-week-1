@@ -60,6 +60,7 @@ tr {
 .card {
   border-width: thick;
   border-color: green;
+  margin: 20px;
 }
 
 .btn {

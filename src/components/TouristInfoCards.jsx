@@ -6,7 +6,7 @@ import LondonImage from "../images/london.jpg";
 //3. Create and use a new component to show info cards
 function TouristInfoCards() {
   return (
-    <div className="d-flex container">
+    <div className="d-flex container space-around">
       <div className="card">
         <img src={GlasglowImage} className="card-img-top" />
         <div className="card-body">
