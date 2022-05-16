@@ -60,6 +60,8 @@ tr {
 .card {
   border-width: thick;
   border-color: green;
+  margin-bottom: 40px;
+  margin-top: 40px;
   margin: 20px;
 }
 
@@ -76,6 +78,6 @@ ul {
 .table {
   width: 80%;
   margin: auto;
-  margin-bottom: 130px;
+  margin-bottom: 40px;
   margin-top: 40px;
 }
