@@ -23,8 +23,8 @@ const Bookings = () => {
   const search = searchVal => {
     const bookingsFiltered = bookings.filter(booking => {
       return (
-        booking.firstName.toLowerCase().includes(searchVal) ||
-        booking.surname.toLowerCase().includes(searchVal)
+        booking.firstName[0].toUpperCase().includes(searchVal) ||
+        booking.surname[0].toUpperCase().includes(searchVal)
       );
     });
     console.log(bookingsFiltered);

@@ -59,7 +59,6 @@ function SearchResults(props) {
       {props.results.map(client => (
         <ClientsDataRow client={client} />
       ))}
-      ;
     </table>
   );
 }
