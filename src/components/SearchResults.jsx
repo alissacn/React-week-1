@@ -32,6 +32,9 @@ function ClientsDataRow(props) {
       <td>{props.client.checkInDate}</td>
       <td>{props.client.checkOutDate}</td>
       <td>{days}</td>
+      <td>
+        <button className="btn btn-primary">Show profile</button>
+      </td>
     </tr>
   );
 }
@@ -50,12 +53,13 @@ function SearchResults(props) {
           <th scope="col">Check in date</th>
           <th scope="col">Check out date</th>
           <th scope="col">Nights staying</th>
+          <th scope="col">Profile</th>
         </tr>
       </thead>
-
-      {FakeBookings.map(client => (
+      {props.results.map(client => (
         <ClientsDataRow client={client} />
       ))}
+      ;
     </table>
   );
 }
